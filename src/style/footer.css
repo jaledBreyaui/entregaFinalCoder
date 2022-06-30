@@ -1,0 +1,60 @@
+.footer {
+    background-color: rgb(38, 38, 38);
+    color: white;
+    box-shadow: -2px -2px 2px 2px rgb(254, 56, 56);
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+div ul {
+    list-style-type: none;
+    margin: 20px;
+}
+
+div ul li {
+    margin: 5px 0;
+}
+
+.logo__footer {
+    margin: 0%;
+}
+
+.copy {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+}
+
+
+.redes {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.ig,
+.wpp {
+    font-size: 20px;
+    margin: 0 10px 0 0px;
+}
+
+.contacto,
+.tyc {
+    color: grey;
+}
+
+.contacto ul li a,
+.tyc ul li a {
+    color: gray;
+}
+
+
+.contacto ul li a:hover,
+.tyc ul li a:hover {
+    color: white;
+}

@@ -1,0 +1,50 @@
+.navSearch {
+    margin: auto 0;
+    width: 30%;
+}
+
+.searchBar {
+    width: 100%;
+}
+
+.searchInput input {
+    height: 40px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.searchResponse {
+    position: absolute;
+    z-index: 1000;
+    width: 29.8%;
+}
+
+.searchResponseItem {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+
+}
+
+.searchResponseItem img {
+    height: 70px;
+}
+
+.searchResponseItem p {
+    width: 60%;
+    font-size: 20px;
+    color: black;
+}
+
+.searchResponse a {
+    text-decoration: none;
+}
+
+.searchResponseItem:hover {
+    background-color: lightslategrey;
+}

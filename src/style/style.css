@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+#root {
+    min-height: 100%;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+    display: grid;
+    height: 100%;
+    grid-template-rows: auto 1fr auto;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(38, 38, 38);
+    box-shadow: 2px 2px 2px 2px rgb(254, 56, 56);
+}
+
+.logo {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+.brand {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline rgb(38, 38, 38);
+    color: white;
+}
+
+.brand__color {
+    color: rgb(254, 56, 56);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    margin-right: 20px;
+
+}
+
+.nav__ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    position: relative;
+}
+
+.a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.a:hover {
+    color: rgb(254, 56, 56);
+}
+
+.cartIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.cartIcon span {
+    color: white;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.cartIcon img {
+    height: 25px;
+    margin-right: 5px;
+}
+
+.rowPadre {
+    margin-bottom: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.row {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem;
+    align-items: center;
+    justify-content: baseline;
+    width: 100%;
+}
+
+.row h2 {
+    width: 91%;
+    padding: 5px;
+    padding-left: 12px;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+    font-size: 2.5rem;
+    display: block;
+    color: white;
+    background-color: rgb(38, 38, 38);
+    font-weight: 400;
+    box-shadow: 0px 2px 2px 1px rgb(254, 56, 56);
+}
+
+.item-padre {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.itemcontainer {
+    margin: 20px 15px;
+    width: 250px;
+    transition: .2s ease-in-out;
+
+}
+
+.itemcontainer:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(0px 10px 4px #666);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.item p {
+    margin-top: 10px;
+}
+
+.item img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 230px;
+    width: 120px;
+}
+
+.contador {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.addTo {
+    width: 100%;
+}
+
+.addTo button {
+    width: 100%;
+    background: lightblue;
+}
+
+.contador button {
+    width: 20%;
+    background-color: white;
+}
+
+h2 {
+    margin-top: 35px;
+}
+
+.detalleRow {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.itemdetailpadre {
+    position: relative;
+    padding-top: 20px;
+    height: 60%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 30% 30% 30%;
+    grid-template-areas: "h1 h1"
+        "img dp"
+        "img dd"
+        "img cc";
+    border: 2px solid black;
+    background-color: white;
+}
+
+.itemdetailpadre h1 {
+    grid-area: h1;
+    text-align: center;
+}
+
+.itemdetailpadre img {
+    grid-area: img;
+    height: 300px;
+    width: 150px;
+    margin: auto;
+}
+
+.carrito {
+    height: 90vh;
+    margin-bottom: 8%;
+}
+
+.dd {
+    grid-area: dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dp {
+    grid-area: dp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    grid-area: cc;
+}
+
+.cartItem {
+    display: flex;
+    flex-direction: row;
+    margin: 80px;
+    justify-content: space-between;
+    border: 2px solid black;
+    align-items: center;
+    padding: 10px;
+}
+
+.cartItem img {
+    height: 150px;
+    width: 100px;
+
+}
+
+.vaciarCarro {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+
+.comprar {
+    margin-right: 92px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+
+
+@media screen and (min-width:1400px) {
+    .nav__ul {
+        font-size: 20px;
+    }
+
+
+}
+
+
+@media screen and (max-width:1000px) {}
+
+@media screen and (max-width:600px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    .nav {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .a {
+        margin-right: 0px;
+    }
+
+
+
+    .row h2 {
+        font-size: 20px;
+    }
+
+    .itemdetailpadre {
+        padding: 0;
+    }
+}
